@@ -1,0 +1,12 @@
+version: "3"
+services:
+  zalo-bot:
+    build: .
+    container_name: zalo-bot
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+
